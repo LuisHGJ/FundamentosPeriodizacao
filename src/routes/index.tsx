@@ -7,9 +7,12 @@ import {
   Dumbbell,
   LineChart,
   Layers,
+  Mail,
+  Medal,
   ShieldCheck,
   Target,
   Timer,
+  Trophy,
   Zap,
 } from "lucide-react";
 import { useState } from "react";
@@ -233,34 +236,92 @@ function Index() {
 
       {/* TREINADORES */}
       <section className="px-5 py-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
+        <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="stripes-bg overflow-hidden rounded-lg border border-border">
-              <img
-                src={coachesAsset.url}
-                alt="Leonardo Hermisdorf e Dylan Lopes"
-                className="w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={140}>
-            <p className="text-xs font-bold tracking-[0.3em] text-primary uppercase">
+            <p className="text-center text-xs font-bold tracking-[0.3em] text-primary uppercase">
               Quem ensina
             </p>
-            <h2 className="mt-3 text-3xl sm:text-5xl">
-              Leonardo Hermisdorf
-              <br />& Dylan Lopes
+            <h2 className="mt-3 text-center text-3xl sm:text-5xl">
+              Aulas com quem sobe no pódio
             </h2>
-            <p className="mt-6 leading-relaxed text-muted-foreground">
-              Treinadores da Kaizen Powerlifting, com anos de bastidor preparando atletas
-              de força para competição. O método deles nasceu do que funciona na
-              plataforma — e é exatamente isso que você leva no curso.
+            <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+              Não é teoria de gabinete. É quem vive o esporte de força no mais alto nível —
+              como atleta e como treinador.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-              <span className="surface-card px-4 py-2">CREF 044721-G/MG</span>
-              <span className="surface-card px-4 py-2">CREF 076438-G/RJ</span>
-            </div>
           </Reveal>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-2">
+            {/* Dylan */}
+            <Reveal>
+              <div className="surface-card h-full p-8">
+                <div className="stripes-bg mb-6 overflow-hidden rounded-lg border border-border">
+                  <img
+                    src={coachesAsset.url}
+                    alt="Dylan Azeredo Lopes"
+                    className="w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  />
+                </div>
+                <h3 className="text-2xl text-primary">Dylan Azeredo Lopes</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Treinador de Powerlifting com experiência em competições nacionais e
+                  internacionais.
+                </p>
+                <ul className="mt-5 space-y-3 text-sm">
+                  <li className="flex gap-3">
+                    <Trophy className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>Medalhista de ouro como treinador na IPF</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Medal className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>Mundial: Levantamento Terra, categoria Sub Júnior</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Medal className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>Sul-Americano: categorias Open, Júnior e Sub Júnior</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Medal className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>Brasileiro: categorias Open, Júnior e Sub Júnior</span>
+                  </li>
+                </ul>
+              </div>
+            </Reveal>
+
+            {/* Leonardo */}
+            <Reveal delay={140}>
+              <div className="surface-card h-full p-8">
+                <div className="stripes-bg mb-6 overflow-hidden rounded-lg border border-border">
+                  <img
+                    src={coachesAsset.url}
+                    alt="Leonardo Hermisdorf"
+                    className="w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  />
+                </div>
+                <h3 className="text-2xl text-primary">Leonardo Hermisdorf</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Atleta de Powerlifting e Educador Físico.
+                </p>
+                <ul className="mt-5 space-y-3 text-sm">
+                  <li className="flex gap-3">
+                    <Trophy className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>7° do mundo em 2026</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Trophy className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>TOP 1 do Brasil em 2026</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Medal className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>Campeão Brasileiro de Powerlifting –93 kg</span>
+                  </li>
+                </ul>
+                <div className="mt-6 flex flex-wrap gap-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                  <span className="surface-card px-4 py-2">CREF 044721-G/MG</span>
+                  <span className="surface-card px-4 py-2">CREF 076438-G/RJ</span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -269,21 +330,40 @@ function Index() {
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <h2 className="text-center text-3xl sm:text-5xl">Escolha seu acesso</h2>
+            <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
+              Cada módulo por R$127,00 — ou leve a formação completa.
+            </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
             <Reveal>
               <div className="surface-card h-full p-8 transition-transform duration-300 hover:-translate-y-1.5">
-                <h3 className="text-2xl">Módulo avulso</h3>
+                <h3 className="text-2xl">Módulo 1</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Comece pelo Módulo 1 e sinta o método.
+                  Bases da Periodização.
                 </p>
                 <p className="mt-8 font-display text-5xl">R$127,00</p>
                 <p className="mt-1 text-xs tracking-wider text-muted-foreground uppercase">
-                  por módulo
+                  avulso
                 </p>
-                <a href="#oferta" className="btn-blood mt-8 w-full">
+                <a href="#comprovante" className="btn-blood mt-8 w-full">
                   Comprar módulo 1
+                </a>
+              </div>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <div className="surface-card h-full p-8 transition-transform duration-300 hover:-translate-y-1.5">
+                <h3 className="text-2xl">Módulo 2</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Modelos e Estruturas.
+                </p>
+                <p className="mt-8 font-display text-5xl">R$127,00</p>
+                <p className="mt-1 text-xs tracking-wider text-muted-foreground uppercase">
+                  avulso
+                </p>
+                <a href="#comprovante" className="btn-blood mt-8 w-full">
+                  Comprar módulo 2
                 </a>
               </div>
             </Reveal>
@@ -302,7 +382,7 @@ function Index() {
                 <p className="mt-1 text-xs tracking-wider text-muted-foreground uppercase">
                   economia de R$39,00
                 </p>
-                <a href="#oferta" className="btn-blood animate-pulse-glow mt-8 w-full">
+                <a href="#comprovante" className="btn-blood animate-pulse-glow mt-8 w-full">
                   Garantir os 3 módulos
                 </a>
               </div>
@@ -313,6 +393,34 @@ function Index() {
             <p className="mt-8 text-center text-sm text-muted-foreground">
               Início em 06/09 às 10h • Aulas on-line • Material de apoio incluso
             </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* COMPROVANTE */}
+      <section id="comprovante" className="px-5 py-24">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <div className="surface-card p-8 text-center" style={{ boxShadow: "var(--glow-blood)" }}>
+              <Mail className="mx-auto h-10 w-10 text-primary" />
+              <h2 className="mt-4 text-2xl sm:text-3xl">Envie seu comprovante</h2>
+              <p className="mt-3 text-muted-foreground">
+                Após realizar o pagamento, envie o comprovante para o e-mail abaixo para
+                confirmar sua vaga e receber o acesso ao curso:
+              </p>
+              <p className="mt-5 font-display text-xl break-all text-primary">
+                Kaizen.powerlifting@gmail.com
+              </p>
+              <a
+                href="mailto:Kaizen.powerlifting@gmail.com"
+                className="btn-blood mt-6 text-lg"
+              >
+                Enviar comprovante por e-mail
+              </a>
+              <p className="mt-4 text-xs tracking-wide text-muted-foreground uppercase">
+                Resposta em até 24h após o envio do comprovante
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
