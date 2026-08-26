@@ -19,6 +19,8 @@ import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import logoAsset from "@/assets/logo.png.asset.json";
 import coachesAsset from "@/assets/treinadores.png.asset.json";
+import dylanAsset from "@/assets/dylan.jpg.asset.json";
+import leonardoAsset from "@/assets/Leonardo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -256,7 +258,7 @@ function Index() {
               <div className="surface-card h-full p-8">
                 <div className="stripes-bg mb-6 overflow-hidden rounded-lg border border-border">
                   <img
-                    src={coachesAsset.url}
+                    src={dylanAsset.url}
                     alt="Dylan Azeredo Lopes"
                     className="w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                   />
@@ -292,7 +294,7 @@ function Index() {
               <div className="surface-card h-full p-8">
                 <div className="stripes-bg mb-6 overflow-hidden rounded-lg border border-border">
                   <img
-                    src={coachesAsset.url}
+                    src={leonardoAsset.url}
                     alt="Leonardo Hermisdorf"
                     className="w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                   />
