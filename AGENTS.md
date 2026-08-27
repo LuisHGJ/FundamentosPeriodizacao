@@ -1,10 +1,5 @@
-<!-- LOVABLE:BEGIN -->
 > [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
+> Evite reescrever o histórico publicado do git — force pushing, ou rebasing/amending/squashing commits
+> que já foram pushados — pois isso reescreve o histórico do projeto.
 >
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+> Mantenha o branch principal em um estado funcional.
