@@ -50,32 +50,38 @@ const CTA = "#oferta";
 const modules = [
   {
     n: "Módulo 01",
-    title: "Bases da Periodização",
+    title: "Fundamentos da Periodização",
     icon: Layers,
     items: [
-      "Princípios do treinamento de força",
-      "Volume, intensidade e densidade na prática",
-      "Como ler e interpretar a carga de treino",
+      "O que é periodização",
+      "Variáveis da prescrição e como manipula-las",
+      "Micro, meso e macrociclos",
+      "Dias: primários, secundários, etc.",
+      "Linearidade e ondulação",
     ],
   },
   {
     n: "Módulo 02",
-    title: "Modelos e Estruturas",
+    title: "Estratégias e Aplicações",
     icon: LineChart,
     items: [
-      "Linear, ondulatório e em blocos",
-      "Macro, meso e microciclos",
-      "Escolha do modelo por perfil de atleta",
+      "Modelos e escolas de periodização",
+      "Periodização bottom up e top down",
+      "Como testar e analisar resultados",
+      "DUP (Daily Undulating Periodization)",
+      "Variações e adaptações no treino",
     ],
   },
   {
     n: "Módulo 03",
-    title: "Aplicação e Pico de Forma",
+    title: "Alto Nível e Performance",
     icon: Target,
     items: [
-      "Peaking e taper para competição",
-      "Ajustes de rota e gestão de fadiga",
-      "Montagem de programa do início ao fim",
+      "Análise de alavancas e individualidade",
+      "Psicologia do esporte e coaching",
+      "Como ser um treinador melhor",
+      "Coaching",
+      "Estudos de caso de atletas Kaizen",
     ],
   },
 ];
@@ -181,7 +187,7 @@ function Index() {
       </section>
 
       {/* PROBLEMA */}
-      <section className="relative -mt-10 px-5">
+      <section className="relative -mt-10 px-5 mb-24">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="text-3xl sm:text-6xl">
@@ -211,13 +217,10 @@ function Index() {
       </section>
 
       {/* MÓDULOS */}
-      {/* <section className="border-y border-border bg-card/40 px-5 py-24">
+      <section className="border-y border-border bg-card/40 px-5 py-24">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <h2 className="text-center text-3xl sm:text-5xl">O que você vai dominar</h2>
-            <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
-              Três módulos que levam você da teoria à planilha pronta.
-            </p>
+            <h2 className="text-center text-3xl sm:text-5xl">O que você vai aprender</h2>
           </Reveal>
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -225,8 +228,7 @@ function Index() {
               <Reveal key={m.n} delay={i * 140}>
                 <div className="surface-card group relative h-full overflow-hidden p-7 transition-all duration-300 hover:-translate-y-2">
                   <div className="absolute inset-x-0 top-0 h-1 bg-[var(--gradient-blood)] opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
-                  <m.icon className="h-8 w-8 text-primary" />
-                  <p className="mt-5 text-xs font-bold tracking-[0.3em] text-primary uppercase">
+                  <p className="text-xs font-bold tracking-[0.3em] text-primary uppercase">
                     {m.n}
                   </p>
                   <h3 className="mt-2 text-2xl">{m.title}</h3>
@@ -243,7 +245,7 @@ function Index() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* TREINADORES */}
       <section className="px-5 py-24">
