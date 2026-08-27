@@ -250,7 +250,7 @@ function Index() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <p className="text-center text-xs font-bold tracking-[0.3em] text-primary uppercase">
-              Quem ensina
+              Os professores do dia
             </p>
             <h2 className="mt-3 text-center text-3xl sm:text-5xl">
               Aulas com quem está no pódio
