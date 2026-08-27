@@ -92,10 +92,10 @@ const faqs = [
     q: "Preciso ser treinador para fazer o curso?",
     a: "Não. O curso serve tanto para profissionais que montam treinos quanto para atletas que querem entender e conduzir a própria periodização.",
   },
-  // {
-  //   q: "As aulas são ao vivo ou gravadas?",
-  //   a: "As aulas acontecem on-line, começando dia 06/09 às 10h, e ficam disponíveis para revisão depois.",
-  // },
+  {
+    q: "As aulas são ao vivo ou gravadas?",
+    a: "As aulas acontecem on-line, começando dia 06/09 às 10h, e ficam disponíveis para revisão depois.",
+  },
   {
     q: "Posso comprar apenas um módulo?",
     a: "Sim. O Módulo 1 sai por R$127,00 e os Módulos 2 e 3 por R$197,00 cada. Levando os três juntos, o valor total é R$442,00 com 15% de desconto.",
