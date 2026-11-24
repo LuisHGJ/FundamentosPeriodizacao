@@ -1,6 +1,20 @@
 # Fundamentos da Periodização — Kaizen Powerlifting
 
-Página de vendas do curso on-line **Fundamentos da Periodização** ministrado por Leonardo Hermisdorf e Dylan Lopes. Projeto construído com TanStack Start, React, Tailwind CSS e shadcn/ui.
+**Projeto de cliente.** Página de vendas do curso on-line **Fundamentos da Periodização**, ministrado por Leonardo Hermisdorf e Dylan Lopes.
+
+🔗 **Site no ar:** https://fundamentos-periodzacao.vercel.app/
+
+## O que foi entregue
+
+- **Design** da página (layout, hierarquia visual e identidade do curso)
+- **Front-end** completo e responsivo
+- **Links** (checkout, redes sociais e demais CTA da página)
+
+Antes disso, o material era apenas uma página no Notion — o trabalho consistiu em readequar todo esse conteúdo para um site de verdade, publicado e pronto para vender.
+
+## Stack
+
+TanStack Start, React, Tailwind CSS, shadcn/ui, TypeScript e Vite.
 
 ## Desenvolvimento
 
