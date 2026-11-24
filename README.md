@@ -4,6 +4,8 @@
 
 🔗 **Site no ar:** https://fundamentos-periodzacao.vercel.app/
 
+Hospedado na **Vercel**, com a URL padrão do próprio domínio `*.vercel.app` — o cliente não viu necessidade de algo mais "personalizado" nesse sentido, já que se tratava só de um link na bio levando para a página de vendas.
+
 ## O que foi entregue
 
 - **Design** da página (layout, hierarquia visual e identidade do curso)
